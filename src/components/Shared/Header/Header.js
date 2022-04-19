@@ -7,7 +7,7 @@ import { Container, Nav, Navbar, NavDropdown } from 'react-bootstrap';
 const Header = () => {
     return (
 
-        <div>
+        <div className='nav'>
 
             {/* <nav className='nav-bar'>
                 <Link to='/'>HOME</Link>
@@ -16,7 +16,7 @@ const Header = () => {
                 <Link to='/about'>ABOUT</Link>
                 <Link to='/login'>LOGIN</Link>
             </nav> */}
-            <Navbar collapseOnSelect expand="lg" sticky='top' variant="dark" >
+            <Navbar collapseOnSelect expand="lg"  variant="dark" >
                 <Container>
                     <Navbar.Brand as={Link} to='/' className=' border-color-light border border-5  fw-bold p-2 rounded-pill me-5 align-center text-secondary shadow-lg text'>SELF  MADE</Navbar.Brand>
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />

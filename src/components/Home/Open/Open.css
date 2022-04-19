@@ -1,0 +1,16 @@
+.open-div{
+    margin-top: 40px;
+    box-shadow: -5px -5px 8px #edeff1, 5px 5px 10px #cacfd8;
+    border-radius: 25px;
+    color: gray;
+    margin-bottom: 40px;
+    padding: 5px;
+}
+
+.time{
+    background-color: gray;
+    color: #cacfd8;
+    padding: 5px;
+    border-radius: 20px;
+    margin-right: 5px;
+}
