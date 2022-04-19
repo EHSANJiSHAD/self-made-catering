@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=My+Soul&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Wet+Paint&display=swap');
 
 .nav-bar a{
     
@@ -27,7 +29,11 @@
 }
 
 .text{
-    color: red;
+    font-family: 'My Soul', cursive;
+    /* font-family: 'Rubik Wet Paint', cursive; */
+    font-size: 30px;
+    
+    
 }
 
 @media only screen and (max-width:477px) {
@@ -46,5 +52,12 @@
     }
     .nav-bar-bg{
         background-color: transparent;
+    }
+}
+
+@media only screen and (max-width:312px) {
+    .text{
+        font-size: 16px;
+        width: 100%;
     }
 }
