@@ -1,0 +1,53 @@
+.login-div{
+    margin-top: 20px;
+   width: 30%;
+   box-shadow: -5px -5px 8px #edeff1, 5px 5px 10px #cacfd8;
+   border-radius: 25px;
+   padding: 15px;
+   color: gray;
+   transition: .5s;
+
+}
+
+.form-div input{
+    background-color: transparent;
+    box-shadow: -5px -5px 8px #edeff1, 5px 5px 10px #cacfd8;
+    border: none;
+    border-radius: 5px;
+    color: gray;
+    font-weight: 600;
+}
+
+.form-div input ::placeholder{
+    color: gray;
+    font-weight: 600;
+}
+
+.form-div :hover{
+    transform: scale(1.01);
+}
+.form-div :focus{
+    background-color: #e0e4eb;
+    border: gray;
+    transform: scale(1.01);
+    color: gray;
+    font-weight: 600;
+    color: #991c0c;
+}
+
+.form-link{
+    
+    text-decoration: none;
+    color: rgb(72, 199, 13);
+}
+
+.form-link:hover{
+    /* text-decoration: none; */
+    color: rgb(72, 199, 13);
+}
+
+@media only screen and (max-width:588px) {
+    .login-div{
+        width: 100%;
+    }
+}
