@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=My+Soul&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Rubik+Wet+Paint&display=swap');
 
-.nav-bar a{
+.nav-bar a {
     
     text-decoration: none;
     box-shadow: -5px -5px 8px #edeff1, 5px 5px 10px #cacfd8;
@@ -17,8 +17,19 @@
     
 
 }
-.nav{
-    
+.logout-btn{
+    text-decoration: none;
+    box-shadow: -5px -5px 8px #edeff1, 5px 5px 10px #cacfd8;
+    border-radius: 25px;
+    color: gray;
+    font-weight: 800;
+    font-size: 18px;
+    margin: 20px;
+    transition: .5s;
+    padding: 5px;
+    margin-top: 20px;
+    border: none;
+    background-color: transparent;
 }
 .nav-bar a:hover{
     box-shadow: -20px -20px 45px #edeff1, 20px 20px 45px #cacfd8;

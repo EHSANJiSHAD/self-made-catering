@@ -1,10 +1,17 @@
 import './Header.css'
-
+import {signOut} from 'firebase/auth' 
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Container, Nav, Navbar, NavDropdown } from 'react-bootstrap';
+import { useAuthState } from 'react-firebase-hooks/auth';
+import auth from '../../../firebase.init';
 
 const Header = () => {
+    const [user] = useAuthState(auth);
+
+    const handleLogOut = () =>{
+        signOut(auth);
+    }
     return (
 
         <div className='nav'>
@@ -22,10 +29,15 @@ const Header = () => {
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                     <Navbar.Collapse id="responsive-navbar-nav"className='nav-bar nav-bar-bg rounded-pill ' >
                         <Link to='/home'>HOME</Link>
-                        <Link to='/services'>SERVICES</Link>
+                        <Link to='/checkout'>CHECKOUT</Link>
                         <Link to='/blogs'>BLOGS</Link>
                         <Link to='/about'>ABOUT</Link>
-                        <Link to='/login'>LOGIN</Link>
+                        {
+                            user 
+                            ?
+                            <button className='logout-btn' onClick={handleLogOut}>LOG OUT</button>
+                            :
+                            <Link to='/login'>LOGIN</Link>}
                     
                     </Navbar.Collapse>
                 </Container>

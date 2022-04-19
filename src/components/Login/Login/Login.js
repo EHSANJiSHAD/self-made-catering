@@ -1,7 +1,7 @@
 import './Login.css'
 import { useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import React, { useState } from 'react';
-import { Link, useNavigate } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { Button, Form } from 'react-bootstrap';
 import auth from '../../../firebase.init';
 
@@ -45,8 +45,13 @@ const Login = () => {
     //     return <p>Loading...</p>;
     //   }
 
+    
+
+    const location = useLocation();
+    const from = location.state?.from?.pathname || '/';
+
     if(user){
-        navigate('/home');
+        navigate(from,{replace: true});
     }
     return (
         <div className='login-div container'>
