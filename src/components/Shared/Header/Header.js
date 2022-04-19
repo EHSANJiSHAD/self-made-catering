@@ -16,7 +16,7 @@ const Header = () => {
                 <Link to='/about'>ABOUT</Link>
                 <Link to='/login'>LOGIN</Link>
             </nav> */}
-            <Navbar collapseOnSelect expand="lg"  variant="dark" >
+            <Navbar collapseOnSelect expand="lg" sticky='top' variant="dark" >
                 <Container>
                     <Navbar.Brand as={Link} to='/' className='bg-secondary border-color-light border border-5  fw-bold p-2 rounded-pill me-5 shadow-lg'>SELF MADE</Navbar.Brand>
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
