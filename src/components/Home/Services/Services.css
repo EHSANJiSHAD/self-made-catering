@@ -5,3 +5,26 @@
     color: gray;
     margin-top: 20px;
 }
+
+.card-container{
+    display: grid;
+    grid-template-columns:repeat(3,1fr);
+    grid-gap:40px;
+    margin-top: 40px;
+}
+
+@media only screen and (max-width:1065px) {
+    .card-container{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+    
+}
+
+@media only screen and (max-width:688px)   {
+    .card-container{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+    
+}

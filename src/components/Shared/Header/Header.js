@@ -22,7 +22,7 @@ const Header = () => {
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                     <Navbar.Collapse id="responsive-navbar-nav"className='nav-bar nav-bar-bg rounded-pill ' >
                         <Link to='/home'>HOME</Link>
-                        <Link to='/order'>ORDER</Link>
+                        <Link to='/services'>SERVICES</Link>
                         <Link to='/blogs'>BLOGS</Link>
                         <Link to='/about'>ABOUT</Link>
                         <Link to='/login'>LOGIN</Link>

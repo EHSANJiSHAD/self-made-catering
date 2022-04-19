@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Playball&display=swap');
+
+body{
+    background-color: #e0e4eb;
+  text-align: center;
+}
+.service-img{
+    opacity: .5;
+    height: 100px;
+    width: 100px;
+    margin: 0 auto;
+    border-radius: 50%;
+}
+.service{
+    
+    box-shadow: -20px -20px 45px #edeff1, 20px 20px 45px #cacfd8; 
+    border-radius: 20px;
+    padding: 5px;
+    margin: 5px;
+    margin-bottom: 20px;
+}
+
+.service:hover{
+    box-shadow: -20px -20px 45px #edeff1, 20px 20px 45px #cacfd8;
+    transform: scale(1.02);
+}
+
+.service h3{
+    /* font-family: 'Playball', cursive; */
+    color: gray;
+    font-size: 20px;
+    font-weight: 700;
+}
+.service p{
+    color: gray;
+}
+.service h5{
+    color: gray;
+}
+
+.btn{
+    position: relative;
+    left: 0%;
+    width: 90px;
+    height: 85px;
+    font-weight: 500;
+    text-align: center;
+    right: 0;
+    border-radius: 50%;
+    box-shadow: -5px -5px 8px #edeff1, 5px 5px 10px #cacfd8;
+    color: gray;
+    padding: 3px;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+.btn:hover{
+    box-shadow: -20px -20px 45px #edeff1, 20px 20px 45px #cacfd8;
+    transform: scale(1.02);
+    color: gray;
+    font-weight: 500;
+}
+

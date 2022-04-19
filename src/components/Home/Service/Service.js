@@ -3,25 +3,27 @@ import './Service.css'
 import React from 'react';
 import { Card, CardGroup } from 'react-bootstrap';
 
-const Service = () => {
+const Service = ({ service }) => {
+    const { id, img, name, price, description } = service;
+    console.log(name);
     return (
-        <div>
-            <CardGroup>
-                <Card>
-                    <Card.Img variant="top" src="holder.js/100px160" />
-                    <Card.Body>
-                        <Card.Title>Card title</Card.Title>
-                        <Card.Text>
-                            This is a wider card with supporting text below as a natural lead-in to
-                            additional content. This card has even longer content than the first to
-                            show that equal height action.
-                        </Card.Text>
-                    </Card.Body>
-                    <Card.Footer>
-                        <small className="text-muted">Last updated 3 mins ago</small>
-                    </Card.Footer>
-                </Card>
-            </CardGroup>
+        <div className='service'>
+
+            <div>
+                <img className='service-img' src={img} alt="" />
+                <h3>{name}</h3>
+                <p>{description}</p>
+            </div>
+
+            <div className='tk-btn-sec'>
+                <hr />
+                <h5>{price} tk/person</h5>
+                <button className='btn'>CHECKOUT</button>
+            </div>
+
+
+
+
         </div>
     );
 };
