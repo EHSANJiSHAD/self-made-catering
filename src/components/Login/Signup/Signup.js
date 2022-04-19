@@ -10,7 +10,7 @@ const Signup = () => {
         user,
         loading,
         error,
-      ] = useCreateUserWithEmailAndPassword(auth);
+      ] = useCreateUserWithEmailAndPassword(auth,{sendEmailVerification:true});
     
     const [sendEmailVerification, sending] = useSendEmailVerification(
         auth
