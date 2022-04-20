@@ -7,6 +7,7 @@ import auth from '../../../firebase.init';
 
 import { useSignInWithGoogle } from 'react-firebase-hooks/auth';
 import { toast, ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import SocialLogin from '../SocialLogin/SocialLogin';
 
 
@@ -33,37 +34,15 @@ const Login = () => {
       ] = useSignInWithEmailAndPassword(auth);
     
 
-    // const [email,setEmail] = useState('');
-    // const [password,setPassword] = useState('');
-    // const [error1,setError1] = useState('');
+    
     const navigate = useNavigate();
 
-    // const handleEmailBlur = event =>{
-    //     setEmail(event.target.value);
-    // }
-
-    // const handlePasswordBlur = event =>{
-    //     setPassword(event.target.value);
-    // }
+    
     const handleNewSignUp = event =>{
         navigate('/signup');
     }
 
-    // const handleUserLogIn = event=>{
-    //     event.preventDefault();
-    //     signInWithEmailAndPassword(email,password);
-    // }
-    // if (error) {
-    //     return (
-    //       <div>
-    //         <p>Error: {error.message}</p>
-    //       </div>
-    //     );
-    //   }
-
-    //   if (loading) {
-    //     return <p>Loading...</p>;
-    //   }
+    
 
     
 
@@ -78,10 +57,10 @@ const Login = () => {
         const email = emailRef.current.value;
         if (email) {
             await sendPasswordResetEmail(email);
-            toast('Sent email');
+            toast('EMAIL SENT');
         }
         else{
-            toast('please enter your email address');
+            toast('PLEASE ENTER YOUR EMAIL FIRST');
         }
     }
     return (

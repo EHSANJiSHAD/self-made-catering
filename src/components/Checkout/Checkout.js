@@ -4,10 +4,10 @@ import React from 'react';
 import { useParams } from 'react-router-dom';
 
 const Checkout = () => {
-    const {checkoutId} = useParams();
+    const { checkoutId } = useParams();
     return (
         <div>
-            <h2 style={{color:'gray'}}>CHECKOUT THIS SERVICE OF : {checkoutId}</h2>
+            <h2 style={{ color: 'blue' }}>CHECKOUT THIS SERVICE OF : {checkoutId}</h2>
         </div>
     );
 };
