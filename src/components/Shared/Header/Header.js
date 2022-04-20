@@ -29,12 +29,13 @@ const Header = () => {
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                     <Navbar.Collapse id="responsive-navbar-nav"className='nav-bar nav-bar-bg rounded-pill ' >
                         <Link to='/home'>HOME</Link>
-                        <Link to='/checkout'>CHECKOUT</Link>
+                        {/* <Link to='/checkout'>CHECKOUT</Link> */}
                         <Link to='/blogs'>BLOGS</Link>
                         <Link to='/about'>ABOUT</Link>
                         {
                             user 
                             ?
+                            
                             <button className='logout-btn' onClick={handleLogOut}>LOG OUT</button>
                             :
                             <Link to='/login'>LOGIN</Link>}

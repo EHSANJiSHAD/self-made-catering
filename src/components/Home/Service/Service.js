@@ -8,8 +8,11 @@ const Service = ({ service }) => {
     const { id, img, name, price, description } = service;
     console.log(name);
     const navigate = useNavigate();
-    const handleCheckOutRout = event =>{
-        navigate('/checkout');
+    
+
+    //useParams
+    const navigateToCheckoutViaParams = id =>{
+        navigate(`/checkout/${id}`);
     }
     return (
         <div className='service'>
@@ -23,7 +26,7 @@ const Service = ({ service }) => {
             <div className='tk-btn-sec'>
                 <hr />
                 <h5>{price} tk/person</h5>
-                <button className='btn' onClick={handleCheckOutRout}>
+                <button onClick={()=>navigateToCheckoutViaParams(id)} className='btn' >
                     CHECKOUT
                 </button>
             </div>

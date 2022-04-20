@@ -1,23 +1,23 @@
 [
-    {
-      "id": "1",
-      "img": "https://i1.wp.com/alphacateringservices.com/wp-content/uploads/2018/05/Service-4-1.png?resize=150%2C150&ssl=1",
-      "price": 350,
-      "name": "PERSONAL EVENTS",
-      "description": "Dawats, Birthdays, Anniversaries, Rooftop Parties, Outdoor Sports, Picnics, Bridal Showers, Baby Showers, Milad, Iftar and Shehri Parties"
-    },
-    {
-      "id": "625e673e0e87eb61611f7342",
-      "img": "https://i0.wp.com/alphacateringservices.com/wp-content/uploads/2018/05/Service-6-1.png?resize=150%2C150&ssl=1",
-      "price": 150,
-      "name": "REGULAR OFFICE LUNCH",
-      "description": "Office Lunch in Reusable & Disposable Lunchboxes"
-    },
-    {
-      "id": "625e673e58f3c8390732ed65",
-      "img": "https://i0.wp.com/alphacateringservices.com/wp-content/uploads/2018/05/Service-2-1.png?resize=150%2C150&ssl=1",
-      "price": 550,
-      "name": "WEDDINGS",
-      "description": "Engagement, Akhth, Aiburo Bhat, Sangeet, Gaye Holud, Wedding, Reception, Post-Marriage Parties"
-    }
-  ]
+  {
+    "id": "1",
+    "img": "https://i1.wp.com/alphacateringservices.com/wp-content/uploads/2018/05/Service-4-1.png?resize=150%2C150&ssl=1",
+    "price": 350,
+    "name": "PERSONAL EVENTS",
+    "description": "Dawats, Birthdays, Anniversaries, Rooftop Parties, Outdoor Sports, Picnics, Bridal Showers, Baby Showers, Milad, Iftar and Shehri Parties"
+  },
+  {
+    "id": "2",
+    "img": "https://i0.wp.com/alphacateringservices.com/wp-content/uploads/2018/05/Service-6-1.png?resize=150%2C150&ssl=1",
+    "price": 150,
+    "name": "REGULAR OFFICE LUNCH",
+    "description": "Office Lunch in Reusable & Disposable Lunchboxes"
+  },
+  {
+    "id": "3",
+    "img": "https://i0.wp.com/alphacateringservices.com/wp-content/uploads/2018/05/Service-2-1.png?resize=150%2C150&ssl=1",
+    "price": 550,
+    "name": "WEDDINGS",
+    "description": "Engagement, Akhth, Aiburo Bhat, Sangeet, Gaye Holud, Wedding, Reception, Post-Marriage Parties"
+  }
+]
